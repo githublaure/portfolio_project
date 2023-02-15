@@ -10,6 +10,7 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
@@ -46,7 +47,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html"
-          ><img src="images/pink-folder.png" width="40px"
+          ><img
+            src="./images/pink-folder.png"
+            width="40px"
+            style="filter: contrast(100%)"
         /></a>
         <button
           class="navbar-toggler"
@@ -83,6 +87,7 @@
           onmouseout="dimContraste('laure1')"
           width="30"
           height="30"
+          style="margin-left: -10px"
         />
         <p><span id="laure1Score">0</span></p>
       </div>
@@ -95,6 +100,7 @@
           onmouseout="dimContraste('laure2')"
           width="30"
           height="30"
+          style="margin-left: -10px"
         />
         <p><span id="laure2Score">0</span></p>
       </div>
@@ -107,6 +113,7 @@
           onmouseout="dimContraste('laure3')"
           width="30"
           height="30"
+          style="margin-left: -10px"
         />
         <p><span id="laure3Score">0</span></p>
       </div>
@@ -119,6 +126,7 @@
           onmouseout="dimContraste('laure4')"
           width="30"
           height="30"
+          style="margin-left: -10px"
         />
         <p><span id="laure4Score">0</span></p>
       </div>
@@ -132,6 +140,7 @@
           onmouseout="dimContraste('laure5')"
           width="30"
           height="30"
+          style="margin-left: -10px"
         />
         <p><span id="laure5Score">0</span></p>
       </div>
@@ -144,6 +153,7 @@
           onmouseout="dimContraste('laure6')"
           width="30"
           height="30"
+          style="margin-left: -10px"
         />
         <p><span id="laure6Score">0</span></p>
       </div>
@@ -156,6 +166,7 @@
           onmouseout="dimContraste('laure7')"
           width="30"
           height="30"
+          style="margin-left: -10px"
         />
         <p><span id="laure7Score">0</span></p>
       </div>
@@ -196,8 +207,8 @@
         };
         function clickImage(imgId) {
           var img = document.getElementById(imgId);
-          img.style.height = "50px";
-          img.style.width = "50px";
+          img.style.height = "30";
+          img.style.width = "30";
           img.style.filter = "contrast(200%)";
 
           if (imgId == "laure1") {
@@ -232,8 +243,8 @@
         }
         function addContrast(imgId) {
           var img = document.getElementById(imgId);
-          img.style.height = "50px";
-          img.style.width = "50px";
+          img.style.height = "30";
+          img.style.width = "30";
           img.style.filter = "contrast(100%)";
         }
       </script>
